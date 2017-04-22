@@ -5,7 +5,7 @@
   "main": "bin/www",
   "scripts": {
     "start": "nodemon bin/www",
-    "dev": "webpack -d --watch",
+    "dev": "DEBUG=true webpack -d --watch",
     "buil": "webpack -p"
   },
   "author": "Jerry Krusinski <jkruzr@gmail.com>",
@@ -21,6 +21,9 @@
     "nodemon": "^1.11.0",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
+    "react-redux": "^5.0.4",
+    "redux": "^3.6.0",
+    "redux-devtools": "^3.3.2",
     "webpack": "^2.4.1"
   }
 }

@@ -1,17 +1,5 @@
 import React from 'react';
 import { render } from 'react-dom';
-import AwesomeComponent from './AwesomeComponent.jsx';
-
-class App extends React.Component {
-  render() {
-    return (
-      <div>
-        <p> Jerry R Krusinski Jr</p>
-        <AwesomeComponent />
-      </div>
-    );  
-  }
-}
+import App from './containers/App.jsx';
 
 render(<App />, document.getElementById('app'));
-
