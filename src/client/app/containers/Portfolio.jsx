@@ -7,7 +7,7 @@ import * as actions from '../actions';
 class Portfolio extends Component {
 
   render() {
-    const { message, actions: { toggleMessage } } = this.props;
+    const { message, toggleMessage } = this.props;
 
     return (
       <div>
@@ -24,9 +24,7 @@ var mapStateToProps = function({ message }) {
 };
 
 var mapDispatchToProps = function(dispatch) {
-  return {
-    actions: bindActionCreators(actions, dispatch)
-  };
+  return bindActionCreators(actions, dispatch);
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(Portfolio);
