@@ -10,12 +10,14 @@ var config = {
     path: BUILD_DIR,
     filename: 'bundle.js'
   },
+  devtool: 'eval-source-map',
   module: {
     loaders: [
       {
         test: /\.jsx?/,
         include: APP_DIR,
-        loader: 'babel-loader'
+        loader: 'babel-loader',
+        exclude: /node_modules/
       }
     ]
   }

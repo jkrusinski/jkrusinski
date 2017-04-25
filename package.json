@@ -4,7 +4,7 @@
   "description": "The portfolio page of Jerry R Krusinski Jr.",
   "main": "bin/www",
   "scripts": {
-    "start": "nodemon bin/www",
+    "start": "nodemon bin/www --ignore src/client",
     "dev": "DEBUG=true webpack -d --watch",
     "buil": "webpack -p"
   },
@@ -17,11 +17,13 @@
     "babel-preset-react": "^6.24.1",
     "body-parser": "^1.17.1",
     "express": "^4.15.2",
+    "material-ui": "^0.17.4",
     "morgan": "^1.8.1",
     "nodemon": "^1.11.0",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
     "react-redux": "^5.0.4",
+    "react-tap-event-plugin": "^2.0.1",
     "redux": "^3.6.0",
     "redux-devtools": "^3.3.2",
     "webpack": "^2.4.1"
