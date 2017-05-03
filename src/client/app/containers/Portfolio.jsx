@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
+import PropTypes from 'prop-types';
 
 import * as actions from '../actions';
 
@@ -18,6 +19,11 @@ class Portfolio extends Component {
     );
   }
 }
+
+Portfolio.propTypes = {
+  message: PropTypes.string,
+  toggleMessage: PropTypes.func
+};
 
 var mapStateToProps = function({ message }) {
   return { message };

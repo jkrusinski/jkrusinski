@@ -9,7 +9,7 @@ import injectTapEventPlugin from 'react-tap-event-plugin';
 injectTapEventPlugin();
 
 import {
-  lightGreen500, lightGreen700, lightGreen400,
+  green500, green700, green400,
   amber500, amber700, amber400,
   grey900, grey400, grey600
 } from 'material-ui/styles/colors';
@@ -19,15 +19,15 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 const muiTheme = getMuiTheme({
   fontFamily: 'Roboto, sans-serif',
   palette: {
-    primary1Color: lightGreen500,
-    primary2Color: lightGreen700,
-    primary3Color: lightGreen400,
+    primary1Color: green500,
+    primary2Color: green700,
+    primary3Color: green400,
     accent1Color: amber500,
     accent2Color: amber700,
     accent3Color: amber400,
     textColor: grey900,
     borderColor: grey400,
-    pickerHeaderColor: lightGreen500,
+    pickerHeaderColor: green500,
   },
 });
 
