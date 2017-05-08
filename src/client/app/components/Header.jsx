@@ -3,7 +3,7 @@ import React from 'react';
 const styles = {};
 
 const Header = () => (
-  <div></div>
+  <h1>Jerry Krusinski</h1>
 );
 
 export default Header;

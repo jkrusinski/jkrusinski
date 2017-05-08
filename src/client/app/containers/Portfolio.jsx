@@ -15,7 +15,7 @@ class Portfolio extends Component {
         <h1>Hello World</h1>
         <p>{ message }</p>
         <button
-          className="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect"
+          className="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
           onClick={() => toggleMessage()}>
           Toggle
         </button>
