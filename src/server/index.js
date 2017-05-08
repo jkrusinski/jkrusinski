@@ -10,16 +10,10 @@ app.use(morgan('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
-app.get('/', (req, res, next) => {
-  res.sendFile(path.join(__dirname, '../client/index.html'));
-});
-
 app.use('/public', express.static(path.join(__dirname, '../client/public/')));
 
-app.use((req, res, next) => {
-  var err = new Error('404 - Not Found');
-  err.status = 404;
-  next(err);
+app.get('/*', (req, res, next) => {
+  res.sendFile(path.join(__dirname, '../client/index.html'));
 });
 
 app.use((err, req, res, next) => {
