@@ -8,4 +8,6 @@ export const amber700 = '#FFA000';
 export const grey50 = '#FAFAFA';
 export const grey100 = '#F5F5F5';
 export const grey300 = '#E0E0E0';
+export const grey500 = '#9E9E9E';
+export const grey700 = '#616161';
 export const grey900 = '#212121';
