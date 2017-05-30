@@ -5,7 +5,7 @@ import { Provider } from 'react-redux';
 
 import * as reducers from '../reducers';
 
-import Navigation from '../components/Navigation.jsx';
+import NavBar from '../components/NavBar.jsx';
 import Header from '../components/Header.jsx';
 
 const reducer = combineReducers(reducers);
@@ -19,7 +19,7 @@ class App extends Component {
         <Provider store={store}>
           <div>
             <Header />
-            <Navigation />
+            <NavBar />
           </div>
         </Provider>
     );
