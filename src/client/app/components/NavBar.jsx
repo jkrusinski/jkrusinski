@@ -25,9 +25,9 @@ const styles = {
 const NavBar = ({ classes }) => (
   <div className={classes.container + ' mdl-card mdl-shadow--2dp'}>
     <div className={classes.spacer + ' mdl-card__supporting-text'}>
-      <NavButton label="About" icon="info" active={true} />
-      <NavButton label="Resume" icon="description" />
-      <NavButton label="Contact" icon="account_circle" />
+      <NavButton label="About" icon="info" to="/about" />
+      <NavButton label="Resume" icon="description" to="/resume" />
+      <NavButton label="Contact" icon="account_circle" to="/contact" />
     </div>
   </div>
 );

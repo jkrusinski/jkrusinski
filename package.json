@@ -17,7 +17,6 @@
     "babel-preset-react": "^6.24.1",
     "body-parser": "^1.17.1",
     "express": "^4.15.2",
-    "material-ui": "^0.17.4",
     "morgan": "^1.8.1",
     "nodemon": "^1.11.0",
     "prop-types": "^15.5.8",
@@ -25,8 +24,7 @@
     "react-dom": "^15.5.4",
     "react-jss": "^6.1.1",
     "react-redux": "^5.0.4",
-    "react-router-redux": "^4.0.8",
-    "react-tap-event-plugin": "^2.0.1",
+    "react-router-dom": "^4.1.1",
     "redux": "^3.6.0",
     "redux-devtools": "^3.3.2",
     "webpack": "^2.4.1"
