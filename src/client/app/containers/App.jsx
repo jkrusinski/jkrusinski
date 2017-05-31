@@ -11,6 +11,7 @@ import Header from '../components/Header.jsx';
 import About from '../components/About.jsx';
 import Resume from '../components/Resume.jsx';
 import Contact from '../components/Contact.jsx';
+import Footer from '../components/Footer.jsx';
 
 const reducer = combineReducers(reducers);
 const store = JSON.parse(process.env.DEBUG || 'false')
@@ -33,6 +34,7 @@ class App extends Component {
                   <Route render={() => <Redirect to="/about" />} />
                 </Switch>
               </div>
+              <Footer />
             </div>
           </BrowserRouter>
         </Provider>
