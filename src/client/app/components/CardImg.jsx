@@ -19,7 +19,7 @@ const styles = {
   }
 };
 
-const CardImg = ({ classes, title, img, height }) => (
+const CardImg = ({ classes, title }) => (
   <div className={`mdl-card mdl-shadow--2dp ${classes.card}`}>
     <div className="mdl-card__title mdl-card--expand"></div>
     <div className={`mdl-card__actions ${classes.footer}`}>{ title }</div>
