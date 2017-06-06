@@ -9,12 +9,15 @@ const styles = {
   },
   text: {
     width: '100%'
+  },
+  title: {
+    paddingBottom: '0'
   }
 };
 
 const Card = ({ classes, children, title }) => (
   <div className={`mdl-card mdl-shadow--2dp ${classes.card}`}>
-    { title ? <div className="mdl-card__title"><h2 className="mdl-card__title-text">{ title }</h2></div> : null }
+    { title ? <div className={`mdl-card__title ${classes.title}`}><h2 className="mdl-card__title-text">{ title }</h2></div> : null }
     <div className={`mdl-card__supporting-text ${classes.text}`}>
       { children }
     </div>

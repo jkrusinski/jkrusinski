@@ -1,9 +1,10 @@
 import React from 'react';
 import injectSheet from 'react-jss';
 import PropTypes from 'prop-types';
+import { grey700, blue500, red500 } from '../constants/colors.js';
 
 import Card from './Card.jsx';
-import Chip from './Chip.jsx';
+import CardImg from './CardImg.jsx';
 
 const styles = {
   row: {
@@ -11,21 +12,22 @@ const styles = {
   }
 };
 
-const About = ({ classes }) => (
-  <div className={`row ${classes.row}`}>
-    <div className="col-sm-7">
-      <Card title="About Me">
-        <p>Here is some stuff about me</p>
-      </Card>
+const About = ({ classes }) => {
+  const apiKey = 'AIzaSyB1DNpnZ23kq2IpYXYhnD2EV3Hnhbo8jXs';
+  const url = `https://maps.googleapis.com/maps/api/staticmap?key=${apiKey}&center=Austin,+Texas&size=600x400&zoom=12`;
+  return (
+    <div className={`row ${classes.row}`}>
+      <div className="col-sm-7">
+        <Card title="About Me">
+          <p>Here is some stuff about me</p>
+        </Card>
+      </div>
+      <div className="col-sm-5">
+        <CardImg title="Location" img={url} />
+      </div>
     </div>
-    <div className="col-sm-5">
-      <Card title="Links">
-        <Chip link="https://github.com/jkrusinski" text="GitHub" icon="github-face" color="grey" />
-        <Chip link="https://linkedin.com/in/jkrusinski" text="LinkedIn" icon="linkedin-box" color="#85C4E0" />
-      </Card>
-    </div>
-  </div>
-);
+  );
+};
 
 About.propTypes = {
   classes: PropTypes.object
