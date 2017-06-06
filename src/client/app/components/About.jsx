@@ -18,12 +18,12 @@ const About = ({ classes }) => {
   return (
     <div className={`row ${classes.row}`}>
       <div className="col-sm-7">
-        <Card title="About Me">
+        <Card title="About Me" height="250px">
           <p>Here is some stuff about me</p>
         </Card>
       </div>
       <div className="col-sm-5">
-        <CardImg title="Location" img={url} />
+        <CardImg title="Location" img={url} height="250px" />
       </div>
     </div>
   );

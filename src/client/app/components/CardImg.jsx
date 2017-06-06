@@ -6,7 +6,9 @@ const styles = {
   card: {
     width: 'unset',
     marginTop: '30px',
-    background: ({ img }) => `url(${img}) center /cover`
+    background: ({ img }) => `url(${img}) center /cover`,
+    height: ({ height }) => height || 200,
+    minHeight: 'unset'
   },
   footer: {
     color: '#fff',
@@ -17,7 +19,7 @@ const styles = {
   }
 };
 
-const CardImg = ({ classes, title, img }) => (
+const CardImg = ({ classes, title, img, height }) => (
   <div className={`mdl-card mdl-shadow--2dp ${classes.card}`}>
     <div className="mdl-card__title mdl-card--expand"></div>
     <div className={`mdl-card__actions ${classes.footer}`}>{ title }</div>
@@ -27,7 +29,8 @@ const CardImg = ({ classes, title, img }) => (
 CardImg.propTypes = {
   classes: PropTypes.object,
   title: PropTypes.string,
-  img: PropTypes.string
+  img: PropTypes.string,
+  height: PropTypes.string
 };
 
 export default injectSheet(styles)(CardImg);
