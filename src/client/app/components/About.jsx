@@ -5,11 +5,10 @@ import { grey700, blue500, indigo500, cyan500 } from '../constants/colors.js';
 
 import Card from './Card.jsx';
 import CardImg from './CardImg.jsx';
+import Social from './Social.jsx';
 
 const styles = {
-  row: {
 
-  }
 };
 
 const About = ({ classes }) => {
@@ -17,7 +16,8 @@ const About = ({ classes }) => {
   const url = `https://maps.googleapis.com/maps/api/staticmap?key=${apiKey}&center=Austin,+Texas&size=600x400&zoom=12`;
   return (
     <div>
-      <div className={`row ${classes.row}`}>
+
+      <div className="row">
         <div className="col-sm-7">
           <Card title="About Me" height="250px">
             <p>Here is some stuff about me</p>
@@ -27,28 +27,22 @@ const About = ({ classes }) => {
           <CardImg title="Location" img={url} height="250px" />
         </div>
       </div>
+
       <div className="row">
         <div className="col-sm-3">
-          <Card height="50px" color="#fff" backgroundColor="#007BB6">
-            LinkedIn
-          </Card>
+          <Social backgroundColor="#007BB6" icon="linkedin-box" name="LinkedIn"/>
         </div>
         <div className="col-sm-3">
-          <Card height="50px" color="#fff" backgroundColor="#171515">
-            GitHub
-          </Card>
+          <Social backgroundColor="#171515" icon="github-circle" name="GitHub"/>
         </div>
         <div className="col-sm-3">
-          <Card height="50px" color="#fff" backgroundColor="#3050A4">
-            Facebook
-          </Card>
+          <Social backgroundColor="#3050A4" icon="facebook-box" name="Facebook"/>
         </div>
         <div className="col-sm-3">
-          <Card height="50px" color="#fff" backgroundColor="#42B6E7">
-            Twitter
-          </Card>
+          <Social backgroundColor="#42B6E7" icon="twitter-box" name="Twitter"/>
         </div>
       </div>
+
     </div>
   );
 };
