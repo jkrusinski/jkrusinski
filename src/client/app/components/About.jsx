@@ -1,15 +1,10 @@
 import React from 'react';
-import injectSheet from 'react-jss';
 import PropTypes from 'prop-types';
 import { grey700, blue500, indigo500, cyan500 } from '../constants/colors.js';
 
 import Card from './Card.jsx';
-import CardImg from './CardImg.jsx';
+import Image from './Image.jsx';
 import Social from './Social.jsx';
-
-const styles = {
-
-};
 
 const About = ({ classes }) => {
   const apiKey = 'AIzaSyB1DNpnZ23kq2IpYXYhnD2EV3Hnhbo8jXs';
@@ -24,7 +19,7 @@ const About = ({ classes }) => {
           </Card>
         </div>
         <div className="col-sm-5">
-          <CardImg title="Location" img={url} height="250px" />
+          <Image title="Location" img={url} height="250px" />
         </div>
       </div>
 
@@ -51,4 +46,4 @@ About.propTypes = {
   classes: PropTypes.object
 };
 
-export default injectSheet(styles)(About);
+export default About;

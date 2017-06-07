@@ -19,18 +19,18 @@ const styles = {
   }
 };
 
-const CardImg = ({ classes, title }) => (
+const Image = ({ classes, title }) => (
   <div className={`mdl-card mdl-shadow--2dp ${classes.card}`}>
     <div className="mdl-card__title mdl-card--expand"></div>
     <div className={`mdl-card__actions ${classes.footer}`}>{ title }</div>
   </div>
 );
 
-CardImg.propTypes = {
+Image.propTypes = {
   classes: PropTypes.object,
   title: PropTypes.string,
   img: PropTypes.string,
   height: PropTypes.string
 };
 
-export default injectSheet(styles)(CardImg);
+export default injectSheet(styles)(Image);
