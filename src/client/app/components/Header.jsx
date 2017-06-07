@@ -1,11 +1,11 @@
 import React from 'react';
 import injectSheet from 'react-jss';
 import PropTypes from 'prop-types';
-import { grey50, blue500 } from '../constants/colors.js';
+import { grey50, lightBlue500 } from '../constants/colors.js';
 
 const styles = {
   wrapper: {
-    backgroundColor: blue500,
+    backgroundColor: lightBlue500,
     overflow: 'auto',
     width: '100%'
   },

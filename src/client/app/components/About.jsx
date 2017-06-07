@@ -33,7 +33,7 @@ const About = ({ classes }) => {
           <Social backgroundColor="#007BB6" icon="linkedin-box" name="LinkedIn"/>
         </div>
         <div className="col-sm-3">
-          <Social backgroundColor="#171515" icon="github-circle" name="GitHub"/>
+          <Social backgroundColor="#171515" icon="github-box" name="GitHub"/>
         </div>
         <div className="col-sm-3">
           <Social backgroundColor="#3050A4" icon="facebook-box" name="Facebook"/>

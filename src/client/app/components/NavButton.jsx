@@ -2,7 +2,7 @@ import React from 'react';
 import injectSheet from 'react-jss';
 import { NavLink } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import { grey700, amber700 } from '../constants/colors.js';
+import { grey700, amber700, lightBlue500 } from '../constants/colors.js';
 
 const styles = {
   button: {
@@ -13,11 +13,13 @@ const styles = {
       outline: 'none'
     },
     '&:active': {
-      color: amber700
+      color: '#fff',
+      backgroundColor: lightBlue500
     }
   },
   active: {
-    color: amber700 + ' !important'
+    color: '#fff',
+    backgroundColor: lightBlue500
   }
 };
 
