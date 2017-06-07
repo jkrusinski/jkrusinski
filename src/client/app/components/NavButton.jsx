@@ -2,15 +2,16 @@ import React from 'react';
 import injectSheet from 'react-jss';
 import { NavLink } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import { grey700, amber700, lightBlue500 } from '../constants/colors.js';
+import { grey700, amber700, lightBlue500, lightBlue700 } from '../constants/colors.js';
 
 const styles = {
   button: {
     display: 'inline-block',
     color: grey700,
     '&:hover, &:focus': {
-      color: 'unset',
-      outline: 'none'
+      color: '#fff',
+      outline: 'none',
+      backgroundColor: lightBlue700
     },
     '&:active': {
       color: '#fff',
