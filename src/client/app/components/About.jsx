@@ -9,6 +9,7 @@ import Social from './Social.jsx';
 const About = ({ classes }) => {
   const apiKey = 'AIzaSyB1DNpnZ23kq2IpYXYhnD2EV3Hnhbo8jXs';
   const url = `https://maps.googleapis.com/maps/api/staticmap?key=${apiKey}&center=Austin,+Texas&size=600x400&zoom=12`;
+
   return (
     <div>
 
@@ -25,16 +26,32 @@ const About = ({ classes }) => {
 
       <div className="row">
         <div className="col-sm-3">
-          <Social backgroundColor="#007BB6" icon="linkedin-box" name="LinkedIn"/>
+          <Social
+            backgroundColor="#007BB6"
+            icon="linkedin-box"
+            name="LinkedIn"
+            link="//linkedin.com/in/jkrusinski" />
         </div>
         <div className="col-sm-3">
-          <Social backgroundColor="#171515" icon="github-box" name="GitHub"/>
+          <Social
+            backgroundColor="#171515"
+            icon="github-box"
+            name="GitHub"
+            link="//github.com/jkrusinski" />
         </div>
         <div className="col-sm-3">
-          <Social backgroundColor="#3050A4" icon="facebook-box" name="Facebook"/>
+          <Social
+            backgroundColor="#3050A4"
+            icon="facebook-box"
+            name="Facebook"
+            link="//facebook.com/jkruzr" />
         </div>
         <div className="col-sm-3">
-          <Social backgroundColor="#42B6E7" icon="twitter-box" name="Twitter"/>
+          <Social
+            backgroundColor="#42B6E7"
+            icon="twitter-box"
+            name="Twitter"
+            link="//twitter.com/jkrusinski" />
         </div>
       </div>
 

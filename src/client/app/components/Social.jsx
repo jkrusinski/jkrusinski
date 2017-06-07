@@ -8,11 +8,16 @@ const styles = {
   social: {
     fontFamily: '\'Open Sans\', sans serif',
     fontSize: '20px'
+  },
+  link: {
+    '&:hover, &:active, &:focus': {
+      textDecoration: 'none'
+    }
   }
 };
 
 const Social = ({ classes, backgroundColor, icon, name, link }) => (
-  <a href={link}>
+  <a href={link} target="_blank" className={classes.link}>
     <Card height="50px" color="#fff" backgroundColor={backgroundColor}>
       <span className={classes.social}>
         <i className={`mdi mdi-${icon}`}></i>
