@@ -3,6 +3,7 @@ import { render } from 'react-dom';
 import { combineReducers, createStore } from 'redux';
 import { Provider } from 'react-redux';
 import { BrowserRouter, Route, Redirect, Switch } from 'react-router-dom';
+import { env } from '../../../../config.js';
 
 import * as reducers from '../reducers';
 
@@ -14,7 +15,7 @@ import Contact from '../components/Contact.jsx';
 import Footer from '../components/Footer.jsx';
 
 const reducer = combineReducers(reducers);
-const store = JSON.parse(process.env.DEBUG || 'false')
+const store = env === 'development'
   ? createStore(reducer, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__())
   : createStore(reducer);
 
