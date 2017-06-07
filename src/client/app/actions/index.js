@@ -1,1 +1,1 @@
-export * from './message-actions.js';
+export * from './contact-actions.js';

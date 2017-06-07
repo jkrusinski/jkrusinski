@@ -1,1 +1,1 @@
-export * from './message.js';
+export * from './contact.js';
