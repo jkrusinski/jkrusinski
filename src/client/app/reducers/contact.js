@@ -16,7 +16,7 @@ export const form = (state = defaultState, action) => {
         ...state,
         email: action.data
       };
-    case 'FROM_MESSAGE':
+    case 'FORM_MESSAGE':
       return {
         ...state,
         message: action.data
