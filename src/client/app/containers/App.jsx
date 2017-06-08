@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
-import { combineReducers, createStore } from 'redux';
+import { combineReducers, createStore, applyMiddleware, compose } from 'redux';
 import { Provider } from 'react-redux';
+import thunk from 'redux-thunk';
 import { BrowserRouter, Route, Redirect, Switch } from 'react-router-dom';
 import { env } from '../../../../config.js';
 
@@ -15,9 +16,14 @@ import Contact from '../components/Contact.jsx';
 import Footer from '../components/Footer.jsx';
 
 const reducer = combineReducers(reducers);
-const store = env === 'development'
-  ? createStore(reducer, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__())
-  : createStore(reducer);
+
+// set up redux devtools
+const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__
+  && env === 'development'
+  ? window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__
+  : compose;
+
+const store = createStore(reducer, composeEnhancers(applyMiddleware(thunk)));
 
 class App extends Component {
   render() {
