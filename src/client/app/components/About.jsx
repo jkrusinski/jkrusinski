@@ -24,6 +24,10 @@ const About = ({ classes }) => {
         </div>
       </div>
 
+      <Card title="Projects">
+        
+      </Card>
+
       <div className="row">
         <div className="col-sm-3">
           <Social

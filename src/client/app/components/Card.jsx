@@ -7,9 +7,12 @@ const styles = {
   card: {
     width: 'unset',
     marginTop: ({ noMargin }) => noMargin ? '0' : '30px',
-    height: ({ height }) => height || 200,
+    height: ({ height }) => height || 'unset',
     minHeight: 'unset',
-    backgroundColor: ({ backgroundColor }) => backgroundColor || '#fff'
+    backgroundColor: ({ backgroundColor }) => backgroundColor || '#fff',
+    '@media (max-width: 768px)': {
+      height: 'unset !important'
+    }
   },
   text: {
     width: '100%',
