@@ -7,6 +7,8 @@ export const amber300 = '#FFD54F';
 export const amber500 = '#FFC107';
 export const amber700 = '#FFA000';
 
+export const lightBlue50 = '#E1F5FE';
+export const lightBlue100 = '#B3E5FC';
 export const lightBlue300 = '#4FC3F7';
 export const lightBlue500 = '#03A9F4';
 export const lightBlue700 = '#0288D1';

@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 const styles = {
   card: {
     width: 'unset',
-    marginTop: '30px',
+    marginTop: ({ noMargin }) => noMargin ? '0' : '30px',
     background: ({ img }) => `url(${img}) center /cover`,
     height: ({ height }) => height || 200,
     minHeight: 'unset'
@@ -19,10 +19,10 @@ const styles = {
   }
 };
 
-const Image = ({ classes, title }) => (
+const Image = ({ classes, title, noMargin }) => (
   <div className={`mdl-card mdl-shadow--2dp ${classes.card}`}>
     <div className="mdl-card__title mdl-card--expand"></div>
-    <div className={`mdl-card__actions ${classes.footer}`}>{ title }</div>
+    { title ? <div className={`mdl-card__actions ${classes.footer}`}>{ title }</div> : null }
   </div>
 );
 
@@ -30,7 +30,8 @@ Image.propTypes = {
   classes: PropTypes.object,
   title: PropTypes.string,
   img: PropTypes.string,
-  height: PropTypes.string
+  height: PropTypes.string,
+  noMargin: PropTypes.bool
 };
 
 export default injectSheet(styles)(Image);

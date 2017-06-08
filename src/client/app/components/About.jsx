@@ -16,7 +16,7 @@ const About = ({ classes }) => {
       <div className="row">
         <div className="col-sm-7">
           <Card title="About Me" height="250px">
-            <p>Here is some stuff about me</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra lorem in erat suscipit, vitae aliquet enim auctor. Nam est eros, rutrum vel ultrices at, ultrices accumsan felis. Quisque posuere, elit eget lacinia convallis, mauris justo bibendum velit, ut tincidunt nulla tellus et lacus. Duis efficitur euismod augue, a dignissim nibh. Nulla vel ipsum elementum, vehicula ex nec, porta neque. Duis venenatis dui sit amet nisi lobortis aliquet. Nulla ullamcorper est vel rutrum facilisis. Mauris aliquet ligula non justo consequat accumsan. Proin sit amet malesuada neque. Nunc accumsan aliquet est, vitae commodo orci.</p>
           </Card>
         </div>
         <div className="col-sm-5">
