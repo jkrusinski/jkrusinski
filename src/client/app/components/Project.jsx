@@ -43,8 +43,8 @@ const Project = ({ classes, name, children, github, link }) => (
     </div>
 
     <div className={`mdl-card__actions mdl-card--border ${classes.actions}`}>
-      <a href={github} className="mdl-button mdl-js-ripple-effect">Code</a>
-      <a href={link} className="mdl-button mdl-js-ripple-effect mdl-button--colored">Link</a>
+      <a href={github} target="_blank" className="mdl-button mdl-js-ripple-effect mdl-js-button">Code</a>
+      <a href={link} target="_blank" className="mdl-button mdl-js-ripple-effect mdl-js-button mdl-button--colored">Link</a>
     </div>
 
   </div>
