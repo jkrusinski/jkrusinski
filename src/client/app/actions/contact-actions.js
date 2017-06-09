@@ -40,15 +40,17 @@ export const formErrorClr = () => ({
 export const sendForm = (form) => ((dispatch) => {
   dispatch(formPosting());
   return axios({
-    url: `http://${host}/contacts`,
+    url: `http://${host}/contact`,
     method: 'POST',
     data: form
   })
-  .then(() => {
+  .then((res) => {
+    console.log(res);
     dispatch(formPosted());
     dispatch(formReset());
   })
   .catch((err) => {
+    dispatch(formPosted());
     dispatch(formError('An Error Occurred'));
   });
 });
