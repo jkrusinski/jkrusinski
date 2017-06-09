@@ -2,7 +2,8 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const morgan = require('morgan');
 const path = require('path');
-const fs = require('fs');
+const sendMail = require('./send-mail');
+const { env } = require('../../config');
 
 const app = express();
 
@@ -13,7 +14,10 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use('/public', express.static(path.join(__dirname, '../client/public/')));
 
 app.post('/contact', (req, res, next) => {
-  res.json(req.body);
+  const { name, email, message } = req.body;
+  sendMail(name, email, message)
+    .then((info) => res.sendStatus(201))
+    .catch((err) => next(err));
 });
 
 app.get('/*', (req, res, next) => {
@@ -22,7 +26,7 @@ app.get('/*', (req, res, next) => {
 
 app.use((err, req, res, next) => {
   var status = err.status || 500;
-  var message = process.env.NODE_ENV === 'development' ? err.stack : err.message;
+  var message = env === 'development' ? err.stack : err.message;
   res.status(status).send(message);
 });
 

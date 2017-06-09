@@ -12,7 +12,7 @@ const transporter = nodemailer.createTransport({
   }
 });
 
-exports.sendMail = (name, email, message) => {
+module.exports = (name, email, message) => {
 
   name = escape(name);
   email = escape(email);
