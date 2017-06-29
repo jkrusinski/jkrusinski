@@ -10,7 +10,7 @@ const styles = {
     width: '100%'
   },
   avatar: {
-    backgroundImage: 'url("/public/media/avatar.jpg")',
+    backgroundImage: 'url("/public/media/head-shot.jpeg")',
     height: '150px',
     width: '150px',
     backgroundSize: 'cover',

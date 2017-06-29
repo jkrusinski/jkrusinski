@@ -23,7 +23,6 @@ class Form extends Component {
   }
 
   checkDirty() {
-    console.dir(this.messageInput);
     this.nameInput.MaterialTextfield.checkDirty();
     this.emailInput.MaterialTextfield.checkDirty();
     this.messageInput.MaterialTextfield.checkDirty();

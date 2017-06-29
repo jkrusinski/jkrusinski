@@ -6,7 +6,8 @@ import { grey100 } from '../constants/colors.js';
 const styles = {
   card: {
     width: '100%',
-    backgroundColor: grey100
+    backgroundColor: grey100,
+    marginTop: '15px'
   },
   image: {
     height: '100px',
@@ -18,7 +19,7 @@ const styles = {
   text: {
     paddingTop: 0,
     fontSize: '14px',
-    height: '75px'
+    height: '175px'
   },
   actions: {
     display: 'flex',
