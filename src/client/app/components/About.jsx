@@ -34,7 +34,27 @@ const About = ({ classes }) => {
               img="/public/media/cardcast.png"
               github="//github.com/jkrusinski/cardcast"
               link="//cast.jkrusinski.com">
-              A tool for collaborative presentations.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce finibus, erat id auctor laoreet, neque metus mattis magna, quis maximus magna sapien quis ligula. Morbi at dolor tincidunt, iaculis purus a, porta nibh. Duis rutrum quam nec dapibus congue. Proin ut semper risus. Nunc suscipit lobortis ultrices. Pellentesque sed euismod lacus, et accumsan magna.
+            </Project>
+          </div>
+
+          <div className="col-sm-4">
+            <Project
+              name="My Sentry"
+              img="/public/media/mysentry.png"
+              github="//github.com/jkrusinski/ballooncat"
+              link="//ballooncat.jkrusinski.com">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce finibus, erat id auctor laoreet, neque metus mattis magna, quis maximus magna sapien quis ligula. Morbi at dolor tincidunt, iaculis purus a, porta nibh. Duis rutrum quam nec dapibus congue. Proin ut semper risus. Nunc suscipit lobortis ultrices. Pellentesque sed euismod lacus, et accumsan magna.
+            </Project>
+          </div>
+
+          <div className="col-sm-4">
+            <Project
+              name="Echoes"
+              img="/public/media/echoes.png"
+              github="//github.com/jkrusinski/ballooncat"
+              link="//ballooncat.jkrusinski.com">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce finibus, erat id auctor laoreet, neque metus mattis magna, quis maximus magna sapien quis ligula. Morbi at dolor tincidunt, iaculis purus a, porta nibh. Duis rutrum quam nec dapibus congue. Proin ut semper risus. Nunc suscipit lobortis ultrices. Pellentesque sed euismod lacus, et accumsan magna.
             </Project>
           </div>
 
@@ -44,7 +64,7 @@ const About = ({ classes }) => {
               img="/public/media/ballooncat.png"
               github="//github.com/jkrusinski/ballooncat"
               link="//ballooncat.jkrusinski.com">
-              A fun game. Help Balloon Cat survive space.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce finibus, erat id auctor laoreet, neque metus mattis magna, quis maximus magna sapien quis ligula. Morbi at dolor tincidunt, iaculis purus a, porta nibh. Duis rutrum quam nec dapibus congue. Proin ut semper risus. Nunc suscipit lobortis ultrices. Pellentesque sed euismod lacus, et accumsan magna.
             </Project>
           </div>
 
@@ -54,7 +74,7 @@ const About = ({ classes }) => {
               img="/public/media/danceparty.png"
               github="//github.com/jkrusinski/danceparty"
               link="//danceparty.jkrusinski.com">
-              An Adventure Time themed dance party.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce finibus, erat id auctor laoreet, neque metus mattis magna, quis maximus magna sapien quis ligula. Morbi at dolor tincidunt, iaculis purus a, porta nibh. Duis rutrum quam nec dapibus congue. Proin ut semper risus. Nunc suscipit lobortis ultrices. Pellentesque sed euismod lacus, et accumsan magna.
             </Project>
           </div>
 
