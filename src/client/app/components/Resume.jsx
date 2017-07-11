@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 
 import Card from './Card.jsx';
 import Chip from './Chip.jsx';
+import Image from './Image.jsx';
 import Experience from './Experience.jsx';
 
 import { skills, experiences, education } from '../data/resume.js';
@@ -17,13 +18,23 @@ const styles = {
 const Resume = ({ classes }) => (
   <div>
 
-    <Card title="Skills" height="unset">
-      <div className={classes.skills}>
-        {skills.map((skill, index) => (
-          <Chip text={skill} key={index} />
-        ))}
+    <div className="row">
+
+      <div className="col-sm-9">
+        <Card title="Skills" height="unset">
+          <div className={classes.skills}>
+            {skills.map((skill, index) => <Chip text={skill} key={index} />)}
+          </div>
+        </Card>
       </div>
-    </Card>
+
+      <div className="col-sm-3">
+        <Image img="/public/media/download.svg" title="Download PDF" fit={true}/>
+      </div>
+
+    </div>
+
+
 
     <Card title="Experience" height="unset">
       {experiences.map(({img, institution, title, start, end, isFirst, description}, index) => (
