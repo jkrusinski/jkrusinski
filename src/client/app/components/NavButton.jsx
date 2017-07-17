@@ -11,7 +11,8 @@ const styles = {
     '&:hover, &:focus': {
       color: '#fff',
       outline: 'none',
-      backgroundColor: lightBlue700
+      backgroundColor: lightBlue700,
+      textDecoration: 'none'
     },
     '&:active': {
       color: '#fff',

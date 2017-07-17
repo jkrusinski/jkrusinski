@@ -30,7 +30,7 @@ const About = ({ classes }) => {
       <Card title="Projects">
         <div className="row">
           {projects.map(({name, img, github, link, description}, index) => (
-            <div className="col-sm-4" key={index}>
+            <div className="col-sm-6 col-md-4" key={index}>
               <Project name={name} img={img} github={github} link={link}>
                 {description}
               </Project>
