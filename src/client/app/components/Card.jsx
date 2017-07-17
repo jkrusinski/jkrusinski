@@ -16,7 +16,8 @@ const styles = {
   },
   text: {
     width: '100%',
-    color: ({ color }) => color || grey900
+    color: ({ color }) => color || grey900,
+    overflow: 'scroll'
   },
   title: {
     paddingBottom: '0'

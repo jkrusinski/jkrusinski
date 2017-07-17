@@ -19,7 +19,8 @@ const styles = {
   text: {
     paddingTop: 0,
     fontSize: '14px',
-    height: '175px'
+    height: '175px',
+    overflow: 'scroll'
   },
   actions: {
     display: 'flex',
