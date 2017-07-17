@@ -1,4 +1,4 @@
-export const aboutMe = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra lorem in erat suscipit, vitae aliquet enim auctor. Nam est eros, rutrum vel ultrices at, ultrices accumsan felis. Quisque posuere, elit eget lacinia convallis, mauris justo bibendum velit, ut tincidunt nulla tellus et lacus. Duis efficitur euismod augue, a dignissim nibh. Nulla vel ipsum elementum, vehicula ex nec, porta neque. Duis venenatis dui sit amet nisi lobortis aliquet. Nulla ullamcorper est vel rutrum facilisis. Mauris aliquet ligula non justo consequat accumsan.';
+export const aboutMe = 'Ever since I was a child, I have been astounded by the disruptive and revolutionary power of the Internet. As a software engineer, it is my goal to work within and leverage this technology to foster and improve upon the open and connected world we live in. My aptitude for problem solving and drive to see my ideas come to fruition make the technology industry a perfect fit for me. I have been fortunate to work across the full stack in a variety of different circumstances. Please explore my website to see some of my recent projects, view my current resume, or contact me.';
 
 export const projects = [
   {
@@ -6,35 +6,35 @@ export const projects = [
     img: '/public/media/cardcast.png',
     github: '//github.com/jkrusinski/cardcast',
     link: '//cast.jkrusinski.com',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce finibus, erat id auctor laoreet, neque metus mattis magna, quis maximus magna sapien quis ligula. Morbi at dolor tincidunt, iaculis purus a, porta nibh. Duis rutrum quam nec dapibus congue. Proin ut semper risus. Nunc suscipit lobortis ultrices. Pellentesque sed euismod lacus, et accumsan magna.'
+    description: 'Cardcast is a collaborative presentation platform that utilizes the Google ChromeCast. Chromecast allows users to create and save slide decks with markdown language. They can project these slides to any deviced connected to ChromeCast. It was built using AngularJS, MongoDB, Node.js, and Express.'
   },
   {
     name: 'My Sentry',
     img: '/public/media/mysentry.png',
     github: '//github.com/jkrusinski/my-sentry',
     link: '#',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce finibus, erat id auctor laoreet, neque metus mattis magna, quis maximus magna sapien quis ligula. Morbi at dolor tincidunt, iaculis purus a, porta nibh. Duis rutrum quam nec dapibus congue. Proin ut semper risus. Nunc suscipit lobortis ultrices. Pellentesque sed euismod lacus, et accumsan magna.'
+    description: 'My Sentry is an android application created for people that work in solo careers. It allows them to create groups and events to send out notifications if they are ever in danger. My Sentry was built using React Native with Redux, Node.js, Express and MySQL. It also utilized Firebase Messaging for notifications and Google Places API for location services.'
   },
   {
     name: 'Echoes',
     img: '/public/media/echoes.png',
     github: '//github.com/jkrusinski/echoes',
     link: '#',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce finibus, erat id auctor laoreet, neque metus mattis magna, quis maximus magna sapien quis ligula. Morbi at dolor tincidunt, iaculis purus a, porta nibh. Duis rutrum quam nec dapibus congue. Proin ut semper risus. Nunc suscipit lobortis ultrices. Pellentesque sed euismod lacus, et accumsan magna.'
+    description: 'Echoes is a living listening history. With Echoes, it\'s easy to rate, remember, and relive the albums you\'ve enjoyed (and the ones you haven\'t). This app was inspired by a listening journal that I have been keeping for the past seven years. It was built on React, PostgreSQL, Node.js, and Express. Echoes was designed using Bootstrap.'
   },
   {
     name: 'Baloon Cat',
     img: '/public/media/ballooncat.png',
     github: '//github.com/jkrusinski/watchout',
     link: 'ballooncat.jkrusinski.com',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce finibus, erat id auctor laoreet, neque metus mattis magna, quis maximus magna sapien quis ligula. Morbi at dolor tincidunt, iaculis purus a, porta nibh. Duis rutrum quam nec dapibus congue. Proin ut semper risus. Nunc suscipit lobortis ultrices. Pellentesque sed euismod lacus, et accumsan magna.'
+    description: 'Balloon Cat has floated so high she has entered SPACE! Can you keep her away from those pesky drones? Hover your mouse over the canvas to move Balloon Cat around. If she hits a drone, her helium balloon will explode! This simple but fun game will be sure to keep you entertained for hours.'
   },
   {
     name: 'Dance Party',
     img: '/public/media/danceparty.png',
     github: '//github.com/jkrusinski/adventure-time-dance-party',
     link: 'danceparty.jkrusinski.com',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce finibus, erat id auctor laoreet, neque metus mattis magna, quis maximus magna sapien quis ligula. Morbi at dolor tincidunt, iaculis purus a, porta nibh. Duis rutrum quam nec dapibus congue. Proin ut semper risus. Nunc suscipit lobortis ultrices. Pellentesque sed euismod lacus, et accumsan magna.'
+    description: 'Join Jake the Dog and Finn the Human in another one of their adventures! Make different characters from the show dance together on the screen. Be careful though, the Ice King has a tendency to scare away the princesses!'
   }
 ];
 
