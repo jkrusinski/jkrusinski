@@ -12,6 +12,11 @@ import { skills, experiences, education } from '../data/resume.js';
 const styles = {
   skills: {
     textAlign: 'center'
+  },
+  download: {
+    '&:hover, &:focus, &:active': {
+      textDecoration: 'none'
+    }
   }
 };
 
@@ -29,7 +34,14 @@ const Resume = ({ classes }) => (
       </div>
 
       <div className="col-sm-3">
-        <Image img="/public/media/download.svg" title="Download PDF" fit={true}/>
+        <a href="/public/media/jerry-krusinski.pdf" download className={classes.download}>
+          <Image
+            img="/public/media/download.svg"
+            title="Download Resume"
+            fit={true}
+            color="#FFC107"
+          />
+        </a>
       </div>
 
     </div>

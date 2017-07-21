@@ -18,7 +18,7 @@ const styles = {
     background: 'rgba(0, 0, 0, 0.4)'
   },
   background: {
-    backgroundColor: 'white'
+    backgroundColor: ({ color }) => color ? color : 'white'
   }
 };
 
@@ -37,7 +37,8 @@ Image.propTypes = {
   img: PropTypes.string,
   height: PropTypes.string,
   noMargin: PropTypes.bool,
-  fit: PropTypes.bool
+  fit: PropTypes.bool,
+  color: PropTypes.string
 };
 
 export default injectSheet(styles)(Image);
