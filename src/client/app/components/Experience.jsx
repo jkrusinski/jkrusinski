@@ -18,6 +18,10 @@ const styles = {
   image: {
     boxShadow: `2px 2px 1px ${lightBlue300}`
   },
+  'list': {
+    paddingLeft: '20px',
+    fontSize: '16px'
+  },
   '@media (max-width: 768px)': {
     headers: {
       marginTop: '15px'
@@ -35,7 +39,13 @@ const Experience = ({ classes, img, institution, title, start, end, children, is
         <h3 className={classes.headers}>{institution}</h3>
         <h4 className={classes.headers}>{title}</h4>
         <h6 className={classes.headers}>{start} - {end}</h6>
-        <div className={classes.body}>{children}</div>
+        <div className={classes.body}>
+          <ul className={classes.list}>
+            {children.map((item, key) => (
+              <li key={key}>{item}</li>
+            ))}
+          </ul>
+        </div>
       </div>
     </div>
   </Card>

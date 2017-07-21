@@ -1,4 +1,4 @@
-export const aboutMe = 'Ever since I was a child, I have been astounded by the disruptive and revolutionary power of the Internet. As a software engineer, it is my goal to work within and leverage this technology to foster and improve upon the open and connected world we live in. My aptitude for problem solving and drive to see my ideas come to fruition make the technology industry a perfect fit for me. I have been fortunate to work across the full stack in a variety of different circumstances. Please explore my website to see some of my recent projects, view my current resume, or contact me.';
+export const aboutMe = 'Ever since I was a child, I have been astounded by the power technology has to augment our lives. As an adult, my fascination with the new and cutting edge has not subsided. Developing software feeds this natural curiosity and my desire to learn. By far, my favorite part about programming is discovering different tools so solve problems in novel ways. In the past, I have been fortunate to work across a variety of different stacks and a diverse range of applications. Please take some time to explore my website to learn more about my experience and my passion for programming.';
 
 export const projects = [
   {
@@ -6,7 +6,7 @@ export const projects = [
     img: '/public/media/cardcast.png',
     github: '//github.com/jkrusinski/cardcast',
     link: '//cast.jkrusinski.com',
-    description: 'Cardcast is a collaborative presentation platform that utilizes the Google ChromeCast. Chromecast allows users to create and save slide decks with markdown language. They can project these slides to any deviced connected to ChromeCast. It was built using AngularJS, MongoDB, Node.js, and Express.'
+    description: 'CardCast is a collaborative presentation platform that utilizes the Google ChromeCast. Chromecast allows users to create and save slide decks with markdown language. They can project these slides to any deviced connected to ChromeCast. It was built using AngularJS, MongoDB, Node.js, and Express.'
   },
   {
     name: 'My Sentry',
@@ -20,7 +20,7 @@ export const projects = [
     img: '/public/media/echoes.png',
     github: '//github.com/jkrusinski/echoes',
     link: '#',
-    description: 'Echoes is a living listening history. With Echoes, it\'s easy to rate, remember, and relive the albums you\'ve enjoyed (and the ones you haven\'t). This app was inspired by a listening journal that I have been keeping for the past seven years. It was built on React, PostgreSQL, Node.js, and Express. Echoes was designed using Bootstrap.'
+    description: 'Echoes is a living listening history. With Echoes, it\'s easy to rate, remember, and relive the albums you\'ve enjoyed (and the ones you haven\'t). This app was built on React, PostgreSQL, Node.js, and Express. Echoes was designed using Bootstrap.'
   },
   {
     name: 'Baloon Cat',

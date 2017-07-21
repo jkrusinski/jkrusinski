@@ -4,9 +4,9 @@
   "description": "The portfolio page of Jerry R Krusinski Jr.",
   "main": "bin/www",
   "scripts": {
-    "start": "nodemon bin/www --ignore src/client",
-    "dev": "DEBUG=true webpack -d --watch",
-    "buil": "webpack -p"
+    "start": "nodemon --inspect bin/www --ignore src/client",
+    "dev": "webpack -d --watch",
+    "build": "webpack -p"
   },
   "author": "Jerry Krusinski <jkruzr@gmail.com>",
   "license": "UNLICENSED",
