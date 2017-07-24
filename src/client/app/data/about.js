@@ -1,4 +1,4 @@
-export const aboutMe = 'Ever since I was a child, I have been astounded by the power technology has to augment our lives. As an adult, my fascination with the new and cutting edge has not subsided. Developing software feeds this natural curiosity and my desire to learn. By far, my favorite part about programming is discovering different tools so solve problems in novel ways. In the past, I have been fortunate to work across a variety of different stacks and a diverse range of applications. Please take some time to explore my website to learn more about my experience and my passion for programming.';
+export const aboutMe = 'Ever since I was a child, I have been astounded by the power technology has to augment our lives. As an adult, my fascination with the new and cutting edge has not subsided. Developing software feeds this natural curiosity and my desire to learn. By far, my favorite part about programming is discovering different tools to solve problems in novel ways. In the past, I have been fortunate to work across a variety of different stacks and a diverse range of applications. Please take some time to explore my website to learn more about my experience and my passion for programming.';
 
 export const projects = [
   {
@@ -23,7 +23,7 @@ export const projects = [
     description: 'Echoes is a living listening history. With Echoes, it\'s easy to rate, remember, and relive the albums you\'ve enjoyed (and the ones you haven\'t). This app was built on React, PostgreSQL, Node.js, and Express. Echoes was designed using Bootstrap.'
   },
   {
-    name: 'Baloon Cat',
+    name: 'Balloon Cat',
     img: '/public/media/ballooncat.png',
     github: '//github.com/jkrusinski/watchout',
     link: 'ballooncat.jkrusinski.com',
