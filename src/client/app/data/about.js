@@ -26,14 +26,14 @@ export const projects = [
     name: 'Balloon Cat',
     img: '/public/media/ballooncat.png',
     github: '//github.com/jkrusinski/watchout',
-    link: 'ballooncat.jkrusinski.com',
+    link: '//ballooncat.jkrusinski.com',
     description: 'Balloon Cat has floated so high she has entered SPACE! Can you keep her away from those pesky drones? Hover your mouse over the canvas to move Balloon Cat around. If she hits a drone, her helium balloon will explode! This simple but fun game will be sure to keep you entertained for hours.'
   },
   {
     name: 'Dance Party',
     img: '/public/media/danceparty.png',
     github: '//github.com/jkrusinski/adventure-time-dance-party',
-    link: 'danceparty.jkrusinski.com',
+    link: '//danceparty.jkrusinski.com',
     description: 'Join Jake the Dog and Finn the Human in another one of their adventures! Make different characters from the show dance together on the screen. Be careful though, the Ice King has a tendency to scare away the princesses!'
   }
 ];
