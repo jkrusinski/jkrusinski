@@ -29,7 +29,11 @@ class Form extends Component {
   }
 
   render() {
-    const { classes, form, handleName, handleEmail, handleMessage, handleForm } = this.props;
+    const {
+      classes, form, posting, error,
+      handleName, handleEmail, handleMessage, handleForm
+    } = this.props;
+
     // make sure form clears properly with MDL when done programatically
     setTimeout(this.checkDirty, 0);
     return (
@@ -77,6 +81,7 @@ class Form extends Component {
         <div className={classes.actions}>
           <button
             type="submit"
+            disabled={posting}
             className={`mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored ${classes.button}`}>
             Send
           </button>
@@ -94,6 +99,8 @@ Form.propTypes = {
     email: PropTypes.string,
     message: PropTypes.string
   }),
+  posting: PropTypes.bool,
+  error: PropTypes.string,
   handleName: PropTypes.func,
   handleEmail: PropTypes.func,
   handleMessage: PropTypes.func,

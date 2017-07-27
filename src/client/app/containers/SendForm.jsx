@@ -3,9 +3,11 @@ import { formName, formEmail, formMessage, sendForm } from '../actions';
 
 import Form from '../components/Form.jsx';
 
-const mapStateToProps = (state) => {
+const mapStateToProps = ({ form, formStatus }) => {
   return {
-    form: state.form
+    form,
+    posting: formStatus.posting,
+    error: formStatus.error
   };
 };
 
